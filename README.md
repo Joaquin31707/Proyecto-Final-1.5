@@ -1,6 +1,13 @@
 # Proyecto-Final-1.5
-Este es el proyecto final, en el cual hablaremos sobre un tema bien conocido: El Cambio Climático
-Este código está dividido en dos partes: el discord bot que te va a introducir al tema con varias funciones únicas y finalmente un sitio web que te va a dar unas recomendaciones dependiendo de tus respuestas.
-DATOS:
-El sitio web está vinculado a otro repositorio, el cual incluye solo un index.html y style.css
-Este repositorio incluye el main.py para el bot de discord
+# Proyecto Final: Cambio Climático
+
+Este es el proyecto final, en el cual hablaremos sobre un tema muy conocido: **el cambio climático**.
+
+El proyecto está dividido en dos partes: un **bot de Discord**, que introduce al usuario al tema mediante varias funciones, y un **sitio web**, que brinda recomendaciones dependiendo de las respuestas del usuario.
+
+## Datos
+
+El sitio web está vinculado a otro repositorio, el cual incluye únicamente los archivos `index.html` y `style.css`.
+
+Este repositorio incluye el archivo `main.py`, que contiene el código del bot de Discord.
+
