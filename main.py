@@ -1,4 +1,5 @@
 import asyncio
+import random
 
 import discord
 from discord.ext import commands
@@ -7,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-TOKEN = "AGREGA TU TOKEN AQUÍ"
+TOKEN = "PON TU CÓDIGO AQUÍ"
 
 URL_HABITOS = "https://joaquin31707.github.io/"
 
@@ -265,7 +266,7 @@ async def fact(ctx):
             )
 
 
-            if len(texto) > 80:
+            if len(texto) > 20:
                 textos.append(texto)
 
 
@@ -276,11 +277,16 @@ async def fact(ctx):
             return
 
 
-        hecho_espanol = textos[0]
+        # Elegir un párrafo aleatorio
+        hecho_espanol = random.choice(textos)
 
 
-        if len(hecho_espanol) > 300:
-            hecho_espanol = hecho_espanol[:300] + "..."
+        # Reducir el dato a máximo 25 palabras
+        palabras = hecho_espanol.split()
+
+        hecho_espanol = " ".join(
+            palabras[:25]
+        ) + "..."
 
 
         await ctx.send(
